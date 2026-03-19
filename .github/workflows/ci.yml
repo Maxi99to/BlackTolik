@@ -1,4 +1,4 @@
-name: Python CI
+name: Python CI/CD
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.11'
 
     - name: Install dependencies
       run: |
@@ -25,3 +25,21 @@ jobs:
 
     - name: Run tests
       run: pytest -q
+
+  package:
+    needs: test  # исправлено: было "tests", должно быть имя job'а — "test"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Create build
+      run: |
+        mkdir build
+        cp -r . build/
+        cd build && zip -r project.zip .
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: project-build
+        path: build/project.zip
