@@ -27,7 +27,7 @@ jobs:
       run: pytest -q
 
   package:
-    needs: test  # исправлено: было "tests", должно быть имя job'а — "test"
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
@@ -36,7 +36,7 @@ jobs:
     - name: Create build
       run: |
         mkdir build
-        cp -r . build/
+        rsync -av --exclude='build' --exclude='.git' . build/
         cd build && zip -r project.zip .
 
     - uses: actions/upload-artifact@v4
