@@ -11,4 +11,4 @@ class TestMathFunctions(unittest.TestCase):
         self.assertEqual(multiply(5, 0), 0)
 
 if __name__ == '__main__':
-    unittest.main(
+    unittest.main()
