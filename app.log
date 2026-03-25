@@ -1,0 +1,31 @@
+2026-03-25 08:46:59 | INFO | Application started
+2026-03-25 08:46:59 | INFO | Starting test execution
+2026-03-25 08:46:59 | INFO | Running test_add_negative
+2026-03-25 08:46:59 | INFO | Addition called: -3 + -7
+2026-03-25 08:46:59 | INFO | Addition result: -10
+2026-03-25 08:46:59 | INFO | test_add_negative passed
+2026-03-25 08:46:59 | INFO | Test execution completed
+2026-03-25 08:46:59 | INFO | Starting test execution
+2026-03-25 08:46:59 | INFO | Running test_add_positive
+2026-03-25 08:46:59 | INFO | Addition called: 3 + 7
+2026-03-25 08:46:59 | INFO | Addition result: 10
+2026-03-25 08:46:59 | INFO | test_add_positive passed
+2026-03-25 08:46:59 | INFO | Test execution completed
+2026-03-25 08:46:59 | INFO | Starting test execution
+2026-03-25 08:46:59 | INFO | Running test_error_handling
+2026-03-25 08:46:59 | INFO | Addition called: string + 5
+2026-03-25 08:46:59 | WARNING | test_error_handling: caught expected TypeError
+2026-03-25 08:46:59 | INFO | Test execution completed
+2026-03-25 08:46:59 | INFO | Starting test execution
+2026-03-25 08:46:59 | INFO | Running test_multiply_by_zero
+2026-03-25 08:46:59 | INFO | Multiplication called: 5 * 0
+2026-03-25 08:46:59 | WARNING | Multiplying by zero: 5 * 0
+2026-03-25 08:46:59 | INFO | Multiplication result: 0
+2026-03-25 08:46:59 | INFO | test_multiply_by_zero passed
+2026-03-25 08:46:59 | INFO | Test execution completed
+2026-03-25 08:46:59 | INFO | Starting test execution
+2026-03-25 08:46:59 | INFO | Running test_multiply_large_numbers
+2026-03-25 08:46:59 | INFO | Multiplication called: 1000 * 2000
+2026-03-25 08:46:59 | INFO | Multiplication result: 2000000
+2026-03-25 08:46:59 | INFO | test_multiply_large_numbers passed
+2026-03-25 08:46:59 | INFO | Test execution completed
